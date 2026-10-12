@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --outline: 1px dotted green;
+}
+body{
+ min-height:100dvh;
+ display: flex;
+ flex-direction: column;
+
+}
+header{
+    background-color: #36373B;
+    padding: 10px;
+    text-align: center;
+}
+nav{
+    background-color: #595454;
+    overflow: hidden;
+}
+main{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 67;
+    background-image: linear-gradient(to bottom, #595454, lightgrey);
+}
+footer{
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+.logo{
+    width: 700px;
+    height: auto;
+}
