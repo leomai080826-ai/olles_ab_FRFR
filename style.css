@@ -1,3 +1,5 @@
+@import url("tema-980.css");
+
 *{
     margin: 0;
     padding: 0;
@@ -5,29 +7,39 @@
     --outline: 1px dotted green;
 }
 body{
- min-height:100dvh;
+ min-height:150dvh;
  display: flex;
  flex-direction: column;
+ width:90dvw;
+ margin: auto;
 
 }
 header{
-    background-color: #36373B;
+    background-color: var(--primary);
     padding: 10px;
     text-align: center;
 }
 nav{
-    background-color: #595454;
+    background-color: var(--secondary);
     overflow: hidden;
+    padding: 5px;
+    text-align: center;
+    
 }
 main{
     padding: 20px;
     display: flex;
     flex-direction: column;
     flex-grow: 67;
-    background-image: linear-gradient(to bottom, #595454, lightgrey);
+    background-color:var(--surface);
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
 }
 footer{
-    background-color: #f2f2f2;
+    background-color: var(--surface-muted);
     padding: 10px;
     text-align: center;
 }
