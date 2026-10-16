@@ -1,4 +1,5 @@
 @import url("tema-980.css");
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
 
 *{
     margin: 0;
@@ -15,12 +16,17 @@ body{
 
 }
 header{
+    height: auto;
+    width: 100%;
     background-color: var(--surface-muted);
-    padding: 10px;
-    text-align: center;
+    padding: 10px 10px 10px 10px;
+    align-items: center;  
+    gap: 3rem;
+
+
 }
 nav{
-    background-color: var(--surface);
+    background-color: var(--outline);
     overflow: hidden;
     padding: 5px;
     text-align: center;
@@ -43,7 +49,54 @@ footer{
     padding: 10px;
     text-align: center;
 }
-.logo{
-    width: 700px;
-    height: auto;
+
+.olles{
+  --size: 800px;
+  --color: var(--logo);
+  display: inline-block;          /* behaves like an image/text */
+  vertical-align: middle;
+  position: relative;             /* lines are placed relative to this */
+  width: var(--size);
+  height: calc(var(--size) * 0.3);/* tall enough for text + all lines */
+  margin-top: calc(var(--size) / 80);
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--color);
+  letter-spacing: calc((var(--size) / 100) * -1);
+}
+.olles:before{
+  position:absolute;
+  top:calc(var(--size) / 14);
+  left:0;
+  content:'';
+  width:var(--size);
+  height:0;
+  border-top:calc(var(--size) / 55) solid var(--color); 
+}
+.olles:after{
+  position:absolute;
+  top:calc(var(--size) / 14);
+  left:calc(var(--size) / 11);
+  content:'';
+  width:calc(var(--size) * .85);
+  height:calc(var(--size) / 6.4);
+  border-bottom:calc(var(--size) / 55) solid var(--color); 
+}
+.olles i{
+  position:absolute;
+  top:calc((var(--size) / 80) * -1);
+  left:calc(var(--size) / 15);
+  width:calc(var(--size) / 8);
+  height:calc(var(--size) / 6.4);
+  border-bottom:calc(var(--size) / 55) solid var(--color);   
+}
+.olles i:after{
+  position:absolute;
+  top:0;
+  left:calc(var(--size) *.72);
+  content:'';
+  width:calc(var(--size) / 6);
+  height:calc(var(--size) / 6.4);
+  border-bottom:calc(var(--size) / 55) solid var(--color);   
 }
