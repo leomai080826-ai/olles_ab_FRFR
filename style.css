@@ -15,12 +15,12 @@ body{
 
 }
 header{
-    background-color: var(--primary);
+    background-color: var(--surface-muted);
     padding: 10px;
     text-align: center;
 }
 nav{
-    background-color: var(--secondary);
+    background-color: var(--surface);
     overflow: hidden;
     padding: 5px;
     text-align: center;
