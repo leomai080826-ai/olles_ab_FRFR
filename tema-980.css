@@ -44,7 +44,7 @@
   --text: hsl(220 4.9% 88%);
   --muted: hsl(223.6 7.2% 70%);
   --border: hsl(220 11.8% 24.9%);
-  --primary: hsl(222.4 47.7% 58%);
+  --primary: hsl(223, 8%, 16%);
   --primary-hover: hsl(222.4 47.5% 64.9%);
   --primary-contrast: hsl(219.1 41.8% 10.8%);
   --accent: hsl(173.4 80.4% 42%);
@@ -71,7 +71,7 @@
   --text: hsl(222.9 15.2% 18%);
   --muted: hsl(222.5 11.2% 42%);
   --border: hsl(228 8.2% 88%);
-  --primary: hsl(222.2 47.4% 11.2%);
+  --primary: hsl(224, 5%, 59%);
   --primary-hover: hsl(222 45.5% 4.3%);
   --primary-contrast: hsl(0 0% 100%);
   --accent: hsl(173.2 80.4% 30%);
@@ -98,7 +98,7 @@
     --text: hsl(220 4.9% 88%);
     --muted: hsl(223.6 7.2% 70%);
     --border: hsl(220 11.8% 24.9%);
-    --primary: hsl(222.4 47.7% 58%);
+    --primary: hsl(213, 8%, 74%);
     --primary-hover: hsl(222.4 47.5% 64.9%);
     --primary-contrast: hsl(219.1 41.8% 10.8%);
     --accent: hsl(173.4 80.4% 42%);
@@ -153,7 +153,7 @@ button.theme-button {
   border: 1px solid var(--primary);
   border-radius: var(--radius-md);
   padding: 0 1rem;
-  color: var(--primary-contrast);
+  color: white;
   background: var(--primary);
   box-shadow: var(--shadow);
   font: 700 1rem/1 var(--font-body);

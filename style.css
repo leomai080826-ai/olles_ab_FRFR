@@ -29,8 +29,19 @@ nav{
     background-color: var(--outline);
     overflow: hidden;
     padding: 5px;
-    text-align: center;
-    
+    text-align: left;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+nav a:hover{
+  transition: all 0.35s ease-in-out;
+}
+ld-theme-toggle{
+    float: right;
+    margin-right: 10px;
 }
 main{
     padding: 20px;
@@ -51,7 +62,7 @@ footer{
 }
 
 .olles{
-  --size: 800px;
+  --size:900px;
   --color: var(--logo);
   display: inline-block;          /* behaves like an image/text */
   vertical-align: middle;
